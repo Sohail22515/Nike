@@ -1,0 +1,290 @@
+@import url('https://fonts.cdnfonts.com/css/contrail-one');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:#FBFAF1;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #CBED62;
+    padding: 10px 20px;
+    z-index: 1000; /* Keeps it on top of other content */
+}
+.links{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.link{
+    cursor: pointer;
+    margin:10px 10px 10px 10px;
+}
+
+.subheading{
+    position: fixed;
+    top: 50px; 
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /* margin-top: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000; /* Keeps it on top of other content */
+    background-color: #FBFAF1;
+
+}
+.logoimg img {
+    width: 100px; 
+    height: auto; 
+}
+.logo{
+    align-items: flex-start;
+
+}
+.pages{
+
+    gap: 20px;
+    border: black solid;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 40px;
+    padding:0px
+}
+.page{
+    border-radius:20px ;
+    padding: 10px;
+
+}
+.page:hover{
+    color:white;
+    background-color: #CBED62;
+}
+
+.create{
+    /* background-color:rgb(173, 255, 58); */
+    background-color: #CBED62;
+    border-radius: 20px;
+    padding:10px 14px;
+    margin: 50px;
+}
+
+.create:hover{
+    background-color: black;
+    color:white;
+}
+.content{
+    
+    margin:120px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feel{
+    font-family: 'Contrail One', sans-serif;
+    font-size: 30px;
+    color: #CBED62;
+}
+.speak{
+    font-family: 'Contrail One', sans-serif;
+    font-size: 70px;
+}
+.lorem{
+    font-family: 'karla', sans-serif;
+    font-size: 16px;
+}
+.left{
+    display:flex;
+    flex-direction: column;
+    /* margin:50px 0px 50px 150px; */
+    justify-content: center;
+    min-height: 60%;
+
+}
+.arrow img{
+    rotate: 180deg;
+}
+.icon{
+    display: flex;
+    padding: 20px;
+}
+.icon img{
+    display: flex;
+    width: 30px; 
+    height: auto; 
+}
+.center div,button{
+    margin: 20px;
+}
+.center button{
+    background-color: #CBED62;
+    padding: 10px;
+    border-radius: 20px;
+    transition:0.3s ease;
+}
+.center button:hover{
+    background-color: black;
+    color: white;
+    scale: 1.1;
+}
+.mainimg{
+    align-items: center;
+    justify-content:end;
+}
+.mainimg img{
+    height: 500px;
+    width: auto;
+}
+.shoes{
+    width: 50%;
+    align-items:center;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    margin:1px 1px;
+    background-color:#CBED62;
+    border-radius: 10px;
+    
+}
+.card img{
+    height: 150px;
+    width: 110;
+    transition:0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.2); /* Scales image to 1.2 times its size */
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 50px; */
+    /* margin-bottom:0px; */
+    height: 40px;
+    background-color: #CBED62;
+    
+}
+.bottom p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pager{
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed */
+
+}
+.heading2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:25px;
+}
+.arrowdown img{
+    height:50px;
+    width: auto;
+}
+
+.slide img{
+    height:400px;
+    width: auto;
+}
+
+
+
+/* Scroller container styling */
+.scroller {
+
+    /* position: fixed;  Keeps the carousel fixed in the center of the viewport 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+
+    
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+/* Individual slide styling */
+.slide {
+    width: 200px;
+    height: 200px;
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Allows stacking of slides */
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    transform-origin: 50% 50%; /* Centers each slide */
+    transition: transform 0.3s ease;
+}
+
+.page3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.words{
+    font-size: 70px;
+    font-family:'Contrail One', sans-serif ;
+}
+#cardstwo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 10px; /* Space between cards */
+    width: 80%;
+    margin: 0 auto; /* Center the container on the page */
+}
+#cardtwo{
+    /* height: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+#cardtwo img{
+    max-width: 80%;
+    height: auto;
+}
+
+
+
+
