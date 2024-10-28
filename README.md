@@ -1,3 +1,3 @@
 # Nike
 
-<img src=../images/Home.png>
+<img src=./Images/Home.png>
